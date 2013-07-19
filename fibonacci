@@ -1,0 +1,26 @@
+// 1.cpp : Defines the entry point for the console application.
+// Nombre: Melina Suarez Berbery
+// Fecha: 19/07/2013
+// Descripcion: DESARROLEE LA SERIE FIBONACCI
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+float N,n1,n2,i,Fn;
+printf("\t ******serie fibonacci******\n");
+printf("\n Ingrese el valor de N: ");
+scanf("%f",&N);
+ n1=0;
+ n2=1;
+for(i=1;i<=N;i++)
+{
+  Fn=n2+n1;
+  printf("\n el siguiente numero es: %f",Fn);
+  n1=n2;
+  n2=Fn;
+}
+getch();
+}
