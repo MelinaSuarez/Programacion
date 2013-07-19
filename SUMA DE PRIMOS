@@ -1,0 +1,40 @@
+// 1.cpp : Defines the entry point for the console application.
+// Nombre: Melina Suarez Berbery
+// Fecha: 19/07/2013
+// Descripcion: suma de numeros primos
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{int n,x,contador,sumaprimo,multiplo;
+printf("\t ******SUMA DE PRIMOS******\n");
+x=1;
+contador=1;
+sumaprimo=0;
+multiplo=0;
+printf("\nIngrese N: ");
+scanf("%d",&n);
+   while(contador<=n)
+   {
+     while(x<=contador)
+        {if(contador==1);
+         {multiplo=1;
+		 }
+		 if(contador%x==0)
+           {multiplo=multiplo+1;
+			}
+		     x++;
+		 }
+	   if(multiplo==2)
+         {printf("\n%d",contador);
+	      sumaprimo=sumaprimo+contador;
+			 }
+	   x=1;
+	   multiplo=0;
+	   contador++;
+	   }
+   printf("\nLA SUMA DE LOS NUMEROS PRIMOS ES:%d",sumaprimo);
+getch();
+}
